@@ -2,16 +2,16 @@
 
 - **Install Redux toolkit**
 
+[Toolkit](https://redux.js.org/introduction/getting-started)
+
 ```bash
     npm install @reduxjs/toolkit
 ```
 
-[Toolkit](https://redux.js.org/introduction/getting-started)
-
 - **Install React Redux**
+
+[React-Redux](https://react-redux.js.org/introduction/getting-started)
 
 ```bash
    npm install react-redux
 ```
-
-[React-Redux](https://react-redux.js.org/introduction/getting-started)
