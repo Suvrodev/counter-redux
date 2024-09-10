@@ -12,8 +12,14 @@
 
 [React-Redux](https://react-redux.js.org/introduction/getting-started)
 
-`bash npm install react-redux`
+```bash
+npm install react-redux
+```
 
-`bash https://www.npmjs.com/package/json-server`
+```bash
+https://www.npmjs.com/package/json-server
+```
 
-`bash npm i json-server`
+```bash
+npm i json-server
+```
