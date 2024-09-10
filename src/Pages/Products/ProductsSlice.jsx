@@ -3,13 +3,15 @@ import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
-// const baseUrl = "http://localhost:3003";
+const baseUrl = "http://localhost:3003";
 // const { baseUrl } = useContext(AuthContext);
 
 export const fetchProducts = createAsyncThunk(
   "products/fetchproducts",
-  async (baseUrl) => {
+  async () => {
+    console.log("Come===================");
     const res = await axios.get(`${baseUrl}/products`);
+    console.log("&&&", res.data);
     return res.data;
   }
 );

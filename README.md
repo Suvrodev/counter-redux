@@ -23,3 +23,9 @@ https://www.npmjs.com/package/json-server
 ```bash
 npm i json-server
 ```
+
+- Run Server
+
+```bash
+npx json-server -p 3003 -w Database/db.json
+```

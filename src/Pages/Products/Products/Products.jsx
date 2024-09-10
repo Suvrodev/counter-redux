@@ -8,14 +8,14 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Products = () => {
   const { baseUrl } = useContext(AuthContext);
-  // console.log("Base url: ", baseUrl);
+
   const { products, isLoading, error } = useSelector((state) => state.productR);
-  // console.log(products);
 
   const disPatch = useDispatch();
   useEffect(() => {
-    disPatch(fetchProducts(baseUrl));
+    disPatch(fetchProducts());
   }, [disPatch]);
+  console.log("products__: ", products);
 
   if (isLoading) {
     return (

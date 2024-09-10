@@ -18,6 +18,10 @@ const routes = [
     title: "Product",
     path: "/product",
   },
+  {
+    title: "Shop",
+    path: "/shop",
+  },
 ];
 const Header = () => {
   const loc = useLocation()?.pathname;
