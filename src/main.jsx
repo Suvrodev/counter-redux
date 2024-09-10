@@ -5,13 +5,16 @@ import { Provider } from "react-redux";
 import { RouterProvider } from "react-router-dom";
 import router from "./Routes/Routes.jsx";
 import store from "./Provider/Store.jsx";
+import AuthProvider from "./Provider/AuthProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <div className="max-w-7xl mx-auto">
     <StrictMode>
-      <Provider store={store}>
-        <RouterProvider router={router} />
-      </Provider>
+      <AuthProvider>
+        <Provider store={store}>
+          <RouterProvider router={router} />
+        </Provider>
+      </AuthProvider>
     </StrictMode>
   </div>
 );

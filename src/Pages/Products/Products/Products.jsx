@@ -1,17 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../ProductsSlice";
 import ProductBox from "./ProductBox/ProductBox";
 import AddBook from "../../Book/AddBook/AddBook";
 import AddProduct from "./AddProduct/AddProduct";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Products = () => {
+  const { baseUrl } = useContext(AuthContext);
+  // console.log("Base url: ", baseUrl);
   const { products, isLoading, error } = useSelector((state) => state.productR);
   // console.log(products);
 
   const disPatch = useDispatch();
   useEffect(() => {
-    disPatch(fetchProducts());
+    disPatch(fetchProducts(baseUrl));
   }, [disPatch]);
 
   if (isLoading) {
