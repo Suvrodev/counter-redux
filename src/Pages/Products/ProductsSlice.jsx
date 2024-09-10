@@ -9,9 +9,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 export const fetchProducts = createAsyncThunk(
   "products/fetchproducts",
   async (baseUrl) => {
-    console.log(baseUrl);
     const res = await axios.get(`${baseUrl}/products`);
-
     return res.data;
   }
 );
