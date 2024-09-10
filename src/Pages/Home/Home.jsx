@@ -1,5 +1,5 @@
 import React from "react";
-import CounterView from "../../Components/Counter/CounterView";
+import CounterView from "../../Components/Counter/Counter/CounterView";
 
 const Home = () => {
   return (

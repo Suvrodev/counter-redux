@@ -1,13 +1,15 @@
 import React from "react";
+import "./CounterView.css";
+
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increaseByAmont, increment, reset } from "./CounterSlice";
+import { decrement, increaseByAmont, increment, reset } from "../CounterSlice";
 
 const CounterView = () => {
   const count = useSelector((state) => state.counter.count);
   const dispatch = useDispatch();
   //   console.log("DitchPatch: ", dispatch);
   return (
-    <div className="w-4/12 border flex flex-col gap-4 p-4">
+    <div className="w-6/12 mx-auto border flex flex-col gap-4 p-4">
       <h1 className="bg-green-600 text-white text-center p-3 w-11/12 mx-auto rounded-md">
         {" "}
         {count}
@@ -15,7 +17,7 @@ const CounterView = () => {
       <div className="flex flex-col gap-4 w-8/12 mx-auto">
         <div className="flex gap-2 justify-between ">
           <button
-            className="btn btn-primary"
+            className="myBtn"
             onClick={() => {
               dispatch(increment());
             }}
@@ -23,7 +25,7 @@ const CounterView = () => {
             Increase
           </button>
           <button
-            className="btn btn-primary"
+            className="myBtn"
             onClick={() => {
               dispatch(decrement());
             }}
@@ -34,7 +36,7 @@ const CounterView = () => {
 
         <div className="flex gap-2">
           <button
-            className="btn btn-primary"
+            className="myBtn"
             onClick={() => {
               dispatch(increaseByAmont(5));
             }}
@@ -43,7 +45,7 @@ const CounterView = () => {
           </button>
 
           <button
-            className="btn btn-primary"
+            className="myBtn"
             onClick={() => {
               dispatch(reset());
             }}
