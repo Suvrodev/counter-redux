@@ -15,3 +15,11 @@
 ```bash
    npm install react-redux
 ```
+
+```json server npm url
+https://www.npmjs.com/package/json-server
+```
+
+```json server install
+npm i json-server
+```
