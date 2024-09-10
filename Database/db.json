@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Earbuds",
+      "price": 59.99,
+      "date": "2024-09-10",
+      "desc": "High-quality wireless earbuds with noise cancellation and long battery life."
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "price": 199.99,
+      "date": "2024-09-08",
+      "desc": "A sleek smartwatch featuring fitness tracking and customizable watch faces."
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "price": 79.99,
+      "date": "2024-09-05",
+      "desc": "Portable Bluetooth speaker with powerful bass and waterproof design."
+    },
+    {
+      "id": 4,
+      "name": "Laptop Backpack",
+      "price": 49.99,
+      "date": "2024-09-07",
+      "desc": "Spacious and durable laptop backpack with multiple compartments."
+    },
+    {
+      "id": 5,
+      "name": "Gaming Mouse",
+      "price": 29.99,
+      "date": "2024-09-09",
+      "desc": "Ergonomic gaming mouse with customizable RGB lighting and programmable buttons."
+    },
+    {
+      "id": 6,
+      "name": "Mechanical Keyboard",
+      "price": 99.99,
+      "date": "2024-09-06",
+      "desc": "Mechanical keyboard with tactile switches and customizable keycaps."
+    }
+  ]
+}
