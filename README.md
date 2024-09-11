@@ -12,6 +12,8 @@
 
 [React-Redux](https://react-redux.js.org/introduction/getting-started)
 
+[RTK-Query](https://redux-toolkit.js.org/tutorials/rtk-query)
+
 ```bash
 npm install react-redux
 ```
