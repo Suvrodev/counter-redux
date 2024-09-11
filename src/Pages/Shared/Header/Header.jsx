@@ -22,6 +22,10 @@ const routes = [
     title: "Shop",
     path: "/shop",
   },
+  {
+    title: "RTK-Shop",
+    path: "/rtk",
+  },
 ];
 const Header = () => {
   const loc = useLocation()?.pathname;

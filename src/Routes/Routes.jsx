@@ -9,6 +9,7 @@ import Book from "../Pages/Book/Book/Book";
 import Post from "../Pages/Post/Post/Post";
 import Products from "../Pages/Products/Products/Products";
 import Shop from "../Pages/Shop/Shop/Shop";
+import RTKShop from "../Pages/RTKShop/RTKShop/RTKShop";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/rtk",
+        element: <RTKShop />,
       },
     ],
   },
